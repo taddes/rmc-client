@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Welcome to RMC CLIENT')
+  res.send('index.html')
 })
 app.listen(PORT, () => {
   console.log(`Listening on port: http://localhost:${PORT}`)

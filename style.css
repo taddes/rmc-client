@@ -1,0 +1,22 @@
+#container {
+  margin:30px;
+}
+h1 {
+  text-align: center;
+}
+#form {
+  border: 1px solid #333;
+  padding: 10px;
+  width:60%;
+  margin: 0 20% 0 20%;
+}
+
+
+i {
+  display: inline-block;
+  float:right;
+}
+
+.invalid {
+  color:red;
+}
