@@ -1,0 +1,22 @@
+{
+  "name": "rmc-client",
+  "version": "1.0.0",
+  "description": "RMC Pay Site Constructor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taddes/rmc-client.git"
+  },
+  "author": "Taddes Korris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taddes/rmc-client/issues"
+  },
+  "homepage": "https://github.com/taddes/rmc-client#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
