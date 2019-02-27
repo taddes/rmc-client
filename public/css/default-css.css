@@ -1,0 +1,322 @@
+
+:root {
+  /* --- VARIABLES --- */
+  --nav-color: navColor;
+  --nav-font-color: navFontColor;
+  --nav-btn-color: navBtnColor;
+  --nav-btn-hover-color: navBtnHoverColor;
+  --btn-color: btnColor;
+  --btn-hover-color: btnHoverColor;
+	--btn-font-color: btnFontColor;
+	--btn-hover-font-color: btnHoverFontColor;
+  --panel-color: panelColor;
+}
+
+
+.logo-sm, .logo-xs, .logo-md, .logo-lg {
+	width: 60px;
+	height: auto;
+	margin-top: 5px;
+	margin-right: 30px;
+}
+
+.navbar {
+  height: 90px;
+}
+
+
+
+.navbar-form {
+  box-shadow: none  ;
+  margin-top: 16px;
+}
+.navbar-header > .navbar-form {
+  max-height: 90px;
+}
+.navbar-collapse {
+  max-height: 500px ;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+}
+.background-color {
+  background: #E9E6DC;
+}
+.panel-default > .panel-heading > strong {
+  font-size: 18px;
+}
+/* subpanel header font size */
+.panel-default > .panel-heading > h4 {
+  font-size: 15px;
+}
+/* menuitem font size */
+.navbar-nav > li a {
+  font-size: 17px;
+}
+/* navbar background */
+.navbar-default {
+  background-color:var(--nav-color);
+  border-color: var(--nav-color);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(68, 68, 68, 0.55);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(68, 68, 68, 0.55);
+  box-shadow: 0px 0px 5px 1px rgba(68, 68, 68, 0.55);
+}
+/* navbar font */
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+/* navbar font */
+.navbar-default .navbar-nav > li > a {
+  color: var(--nav-font-color);
+}
+/* navbar selected text */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #3D1717;
+  background-color: #E9E6DC;
+}
+/* navbar hover text */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #3D1717;
+  background-color: #E9E6DC;
+}
+/* navbar selected text */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #3D1717;
+  background-color: #E9E6DC;
+}
+/* main holder border */
+.panel-default {
+  border-color: #000000;
+}
+.panel-default > .panel-heading {
+  color: #FFFFFF;
+  background-color: var(--panel-color);
+  border-color: var(--panel-color);
+}
+.panel-default > .panel-footer {
+  color: #FFFFFF;
+  background-color: var(--panel-color);
+  border-color: var(--panel-color);
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #000000;
+}
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #000000;
+}
+.panel-default .panel-default .panel-body {
+  background-color: #FFFFFF;
+}
+.btn-default {
+  color: var(--btn-font-color);
+  background-color: var(--btn-color);
+  border-color:var(--btn-color);
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: var(--btn-hover-font-color);
+  background-color: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+  color: var(--btn-hover-font-color);
+}
+.table > thead > tr > td.default,
+.table > tbody > tr > td.default,
+.table > tfoot > tr > td.default,
+.table > thead > tr > th.default,
+.table > tbody > tr > th.default,
+.table > tfoot > tr > th.default,
+.table > thead > tr.default > td,
+.table > tbody > tr.default > td,
+.table > tfoot > tr.default > td,
+.table > thead > tr.default > th,
+.table > tbody > tr.default > th,
+.table > tfoot > tr.default > th {
+  background: #adb3b7;
+  border-color: #66696b;
+}
+.table-hover > tbody > tr > td.default:hover,
+.table-hover > tbody > tr > th.default:hover,
+.table-hover > tbody > tr.default:hover > td {
+  background: #adb3b7;
+  border-color: #66696b;
+}
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #8DC4C7;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li > a {
+  color: #FFFFFF;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #f1efef;
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #f1efef;
+}
+.breadcrumb > .disabled a {
+  color: #f1efef;
+  text-decoration: none;
+  cursor: default;
+}
+/* pop up after clicking a ticket header */
+.modal-header {
+  background-color: #3D1717  ;
+  color: #FFFFFF  ;
+}
+/* pop up after clicking a ticket close button in header */
+button.close {
+  color: #FFFFFF;
+  opacity: 0.8  ;
+  text-shadow: none  ;
+  margin-top: 3px  ;
+}
+/* pop up after clicking a ticket close button in header hover */
+button.close:hover,
+button.close:focus {
+  color: #FFFFFF  ;
+  opacity: 1  ;
+}
+/* pop up after clicking a ticket sub header */
+.list-group-item-info {
+  background-color: #3D1717  ;
+  color: #FFFFFF  ;
+}
+.permitListGroupHeaderBox {
+  background-color: #3D1717;
+  color: #FFFFFF;
+}
+.permitCartLinkCount {
+  margin-left: 29px ;
+  margin-top: 43px ;
+  font-size: 18px ;
+  border-radius: 25px ;
+}
+.permitCartLink {
+  margin-top: 15px;
+  font-size: 50px;
+}
+/******************** OTHER *********************/
+.row {
+  margin: 0 auto;
+}
+.help-block {
+  color: #cc2219;
+}
+a {
+  color: #5e80d3;
+  text-decoration: underline  ;
+}
+a:hover,
+a:active {
+  color: #5471ba;
+}
+.navbar-header {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.push {
+  padding-top: 118px  ;
+}
+.nav li {
+  height: 90px;
+}
+.nav li a {
+  height: 90px;
+  padding-top: 35px;
+  text-decoration: none  ;
+}
+.navbar-nav > li > a {
+  padding-top: 35px;
+}
+.multiPayBar {
+  top: 90px;
+}
+.permitCartLink {
+  color: #FFFFFF;
+}
+.permitCartLink:hover {
+  color: #d3d2d3;
+}
+
+
+@media screen and (max-width: 767px) {
+  .logo-xs {
+    width:80px;
+    height:auto;
+  }
+  img {
+    margin-left: 0  ;
+  }
+  form.navbar-form {
+   padding-bottom: 80px  ;
+  }
+  button.navbar-toggle {
+   margin-top: 20px  ;
+  }
+  div {
+    float:none;
+    clear:both;
+  }
+  .permitStatusElementButton {
+    display: inline-block;
+    float:none;
+    clear:both;
+  }
+  li.list-group-item.permitListGroupItem {
+    display:inline-block;
+  }
+  button.btn.btn-link {
+    width:100%;
+    align-items:center;
+  }
+  li.list-group-item > button {
+    width:100%;
+    margin: 5% 0 5% 0;
+    align-items:center;
+  }
+  .permitCartLink {
+    top: 10px;
+  right:95px;
+  }
+  .permitCartLinkCount {
+    top: 18px;
+    right:85px;
+  }
+}
+

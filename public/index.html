@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RMC Pay Builder</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <link rel="stylesheet" href="/css/style.css">
+
+
+
+</head>
+<body>
+  <div id="container">
+    <h1>RMC BUILDER</h1>
+
+    <div id="form-body">
+      <form id="form" action="/submit" method="POST" enctype="multipart/form-data">
+        <header>RMC Client Builder Input Form</header>
+
+        <i id="nav-color-icon" class="material-icons medium">color_lens</i>
+        <input id="nav-color" class="text-field" type="text" name="navColor" placeholder="Enter Hex Code">
+        <label for="nav-color">Navbar Color</label>
+        <br>
+
+        <i id="nav-font-color-icon" class="material-icons medium">color_lens</i>
+        <input id="nav-font-color" class="text-field" type="text" name="navFontColor" placeholder="Enter Hex Code">
+        <label for="nav-font-color">Navbar Font Color</label>
+        <br>
+      
+        <i id="nav-btn-color-icon" class="material-icons medium">color_lens</i>
+        <input id="nav-btn-color" class="text-field" type="text" name="navBtnColor" placeholder="Enter Hex Code">
+        <label for="nav-btn-color">Navbar Button Color</label>
+        <br>
+
+        <i id="nav-btn-hover-color-icon" class="material-icons medium">color_lens</i>
+        <input id="nav-btn-hover-color" class="text-field" type="text" name="navBtnHoverColor" placeholder="Enter Hex Code">
+        <label for="nav-btn-hover-color">Navbar Button Hover Color</label>
+        <br>
+   
+        <i id="btn-color-icon" class="material-icons medium">color_lens</i>
+        <input id="btn-color" class="text-field" type="text" name="btnColor" placeholder="Enter Hex Code">
+        <label for="btn-color">Button Color</label>
+        <br>
+
+        <i id="btn-hover-color-icon" class="material-icons medium">color_lens</i>
+        <input id="btn-hover-color" class="text-field" type="text" name="btnHoverColor" placeholder="Enter Hex Code">
+        <label for="btn-hover-color">Button Hover Color</label>
+        <br>
+
+        <i id="btn-font-color-icon" class="material-icons medium">color_lens</i>
+        <input id="btn-font-color" class="text-field" type="text" name="btnFontColor" placeholder="Enter Hex Code">
+        <label for="btn-font-color">Button Font Color</label>
+        <br>
+
+        <i id="btn-hover-font-color-icon" class="material-icons medium">color_lens</i>
+        <input id="btn-hover-font-color" class="text-field" type="text" name="btnHoverFontColor" placeholder="Enter Hex Code">
+        <label for="btn-hover-font-color">Button Hover Font Color</label>
+        <br>
+   
+        <i id="panel-color-icon" class="material-icons medium">color_lens</i>
+        <input id="panel-color" class="text-field" type="text" name="panelColor" placeholder="Enter Hex Code">
+        <label for="panel-color">Body Panel Color</label>
+        <br>
+  
+   
+        <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <i class="material-icons">folder</i>
+              <input id="logo" name="logo" type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input id="logoPth" name="logoPth" class="file-path validate" type="text" placeholder="Choose desired logo">
+            </div>
+          </div>
+
+          <button id="submit-btn" class="btn waves-effect waves-light" type="submit" name="logo" onclick="">Submit
+              <i class="material-icons right">send</i>
+            </button>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</html>

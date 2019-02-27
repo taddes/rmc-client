@@ -1,16 +1,17 @@
 // Standard Input Fields
-const font = document.querySelector('#font');
 const navColor = document.querySelector('#nav-color');
+const navFontColor = document.querySelector('#nav-font-color');
 const navBtnColor = document.querySelector('#nav-btn-color');
 const navBtnHoverColor = document.querySelector('#nav-btn-hover-color');
 const btnColor = document.querySelector('#btn-color');
+const btnHoverColor = document.querySelector('#btn-hover-color');
+const btnFontColor = document.querySelector('#btn-font-color');
+const btnHoverFontColor = document.querySelector('#btn-hover-font-color');
 const panelColor = document.querySelector('#panel-color');
-const panelBorderColor = document.querySelector('#panel-border-color');
-const footerColor = document.querySelector('#footer-color');
 const logo = document.querySelector('#logo');
 const submitBtn = document.querySelector('#submit-btn');
 
-
+const params = {}
 // Function to determine if valid hex code
 isHexColor = (hexCode, element) => {
   console.log(element)
@@ -53,6 +54,19 @@ navColor.addEventListener('blur', (e) => {
   isHexColor(hexCode, element);
 });
 
+// navFontColor
+navFontColor.addEventListener('click', (e) => {
+  e.target.value = '#';
+  navFontColor.style.backgroundColor = 'white'
+});
+
+navFontColor.addEventListener('blur', (e) => {
+  console.log(e)
+  let hexCode = e.target.value.trim();
+  let element = e
+  isHexColor(hexCode, element);
+});
+
 // navBtnColor
 navBtnColor.addEventListener('click', (e) => {
   e.target.value = '#';
@@ -79,13 +93,51 @@ navBtnHoverColor.addEventListener('blur', (e) => {
   isHexColor(hexCode, element);
 });
 
-// navBtnHoverColor
+// btnColor
 btnColor.addEventListener('click', (e) => {
   e.target.value = '#';
   btnColor.style.backgroundColor = 'white'
 });
 
 btnColor.addEventListener('blur', (e) => {
+  console.log(e)
+  let hexCode = e.target.value.trim();
+  let element = e
+  isHexColor(hexCode, element);
+});
+// btnHoverColor
+btnHoverColor.addEventListener('click', (e) => {
+  e.target.value = '#';
+  btnHoverColor.style.backgroundColor = 'white'
+});
+
+btnHoverColor.addEventListener('blur', (e) => {
+  console.log(e)
+  let hexCode = e.target.value.trim();
+  let element = e
+  isHexColor(hexCode, element);
+});
+
+// btnFontColor
+btnFontColor.addEventListener('click', (e) => {
+  e.target.value = '#';
+  btnFontColor.style.backgroundColor = 'white'
+});
+
+btnFontColor.addEventListener('blur', (e) => {
+  console.log(e)
+  let hexCode = e.target.value.trim();
+  let element = e
+  isHexColor(hexCode, element);
+});
+
+// btnHoverFontColor
+btnHoverFontColor.addEventListener('click', (e) => {
+  e.target.value = '#';
+  btnHoverFontColor.style.backgroundColor = 'white'
+});
+
+btnHoverFontColor.addEventListener('blur', (e) => {
   console.log(e)
   let hexCode = e.target.value.trim();
   let element = e
@@ -105,33 +157,10 @@ panelColor.addEventListener('blur', (e) => {
   isHexColor(hexCode, element);
 });
 
-// panelBorderColor
-panelBorderColor.addEventListener('click', (e) => {
-  e.target.value = '#';
-  panelBorderColor.style.backgroundColor = 'white'
-});
 
-panelBorderColor.addEventListener('blur', (e) => {
-  console.log(e)
-  let hexCode = e.target.value.trim();
-  let element = e
-  isHexColor(hexCode, element);
-});
-
-// footerColor
-footerColor.addEventListener('click', (e) => {
-  e.target.value = '#';
-  footerColor.style.backgroundColor = 'white'
-});
-
-footerColor.addEventListener('blur', (e) => {
-  console.log(e)
-  let hexCode = e.target.value.trim();
-  let element = e
-  isHexColor(hexCode, element);
-});
-
-
+submit = () => {
+  document.getElementById('form').submit();
+}
 
 
 // Test click handler
